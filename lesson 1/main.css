@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url(/sonts/IBMPlexSans-Bold.ttf);
+}
+body{
+    font-family: "Autour One";
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #b3b3b3;
+}
+.logotype h1 {
+    text-transform: uppercase;
+}
+.main-header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 25px 15px;
+}
+.main-navigation li {
+    display: inline-block;
+    padding-right: 20px;
+}
+.main-navigation li:last-child {
+    padding-right: 0;
+}
+
