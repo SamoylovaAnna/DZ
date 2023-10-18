@@ -13,7 +13,7 @@ a {
  width: 2173px;
  height: 1297px;
  background: rgba(5,7,41,1);
- background-image: url(/img/background.png);
+ background-image: url(img/background.png);
  background-position: center;
  background-size: cover;
 }
@@ -56,25 +56,18 @@ header{
     
 .nav-menu {
     font-size: 17px;
-    padding-top: 94px;
+    margin-top: 94px;
     font-weight: 400;
+   
 }
-.nav-menu li:hover {
-    color: #F2C94C;
-    border: 5px solid transparent;
-    border-image-source: url(/img/Marker.png);
-    border-right: 0px;
-    border-image-slice: 5;
-  
-}
-
-    
 .nav-menu-list li {
     list-style-type: none;
     padding-left: 139px;
-    margin-bottom: 47px;
+    padding-bottom: 23px;
+    padding-top: 24px;
 }
-    
+
+  
 .nav-menu-list li:last-child {
     margin-bottom: 0px;
 }
@@ -85,20 +78,31 @@ header{
 }
     
 .nav-menu-contact li:first-child {
-    margin-top: 394px;
+    margin-top: 370px;
     padding-left: 131px;
-    margin-bottom: 47px;
+    padding-bottom: 23px;
+    padding-top: 24px;
 }
     
 .nav-menu-contact li:last-child {
     padding-left: 129px;
-    margin-bottom: 0px;
+    padding-bottom: 23px;
+    padding-top: 24px;
 }
 
+.nav-menu li:hover {
+   color: #F2C94C;
+    background-image: url(img/Marker.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    white-space: nowrap;
+    }
+    
 .copyright {
     padding-left: 131px;
     margin-bottom: 105px;  
-    margin-top: 81px;
+    margin-top: 58px;
     opacity: 0.25;
 }
  
