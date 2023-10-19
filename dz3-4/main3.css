@@ -53,8 +53,12 @@ header{
         font-size: 17px;
         margin-top: 94px;
         font-weight: 400;
-       
     }
+
+    .nav-menu a {
+        color:#FFFFFF;
+     }
+
     .nav-menu-list li {
         list-style-type: none;
         padding-left: 139px;
@@ -84,6 +88,10 @@ header{
         padding-bottom: 23px;
         padding-top: 24px;
     }
+
+    .nav-menu a:hover {
+        color: #F2C94C;
+        }
     
     .nav-menu li:hover {
        color: #F2C94C;
