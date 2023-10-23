@@ -22,21 +22,26 @@ a {
 header{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    background-color: rgba(11,11,13, 0.5);
-    height: 1296px;
-    width: 384px;
-    position: absolute;
     }
     
+    .nav-header-pk {
+        background-color: rgba(11,11,13, 0.5);
+        height: 1296px;
+        width: 384px;
+        position: absolute;
+    }
+
     .logotype {
-        font-weight: 700;
-        font-size: 30px;
-        letter-spacing: 4.5%;   
-        padding-left: 93px;
+        margin-left: 93px;
         padding-top: 71px;
     }
+    .logotype a, .logotype-mobile {
+        font-weight: 700;
+        font-size: 30px;
+    }
     
-    .logotype span {
+    
+    .logotype span, .logotype-mobile span {
         letter-spacing: 0px !important;
         font-weight: 600;
         color: #A276FF
@@ -118,6 +123,7 @@ header{
     margin-left: 1632px;
     border-radius: 0px 0px 10px 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -160,6 +166,7 @@ h1 {
     margin-left: 593px;;
     width: 1083px;
     height: 83px;
+   
     }
 .btn {
     padding-top: 68px;
@@ -241,4 +248,59 @@ button:hover {
     height: 81px;
     padding-top: 40px;
     }
+
+    .logotype-mobile {
+        display: none;
+    }
+
+/* media */
+@media (min-width: 320px) and (max-width:2173px) {
+.main {
+    width: 100%;
+    height: 100%;
+}
+.logotype {
+    width: 100%;
+}
+.social-icons {
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+.content-heading {
+   width: 100%;
+   height: 100%;
+ display: block;
+}
+    
+    
+}
+
+
+@media (min-width: 320px) and (max-width:768px) {
+    .maim {
+        width: 100%;
+        
+    }
+
+    .nav-header-pk {
+       display: none;
+    }
+
+.logotype-mobile {
+    display: block;
+    text-align: center;
+   padding-top: 40px; 
+}
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 50px;
+    margin-top: -86px;
+
+  }
+
+
+    }
+
 
