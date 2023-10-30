@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jura:wght@600;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    color: #F5F5F5;
+   }
+   
+a {
+    text-decoration: none;  
+   }
+
+   h1, h2, h3, h4 {
+   font-family: 'Jura', sans-serif;
+   font-weight: 700;
+   letter-spacing: 2px;
+   }
+   
+   h2, h3, h4 {
+      color: transparent;
+      -webkit-text-stroke: 3px #F5F5F5;
+   }
+
+   /*ГЛАВНАЯ*/
+
+.main {
+    width: 1440px;
+    background-color: #1d1d1d;
+   }
+
+#home {
+   background-image: url(img/ФОН\ 2.png);
+   height: 900px;
+   background-repeat: no-repeat;
+   width: auto;
+   background-position-y: -75px;
+   background-size: cover;
+   border-bottom: 2px solid #B8A5FF;
+   }
+
+   .name {
+    padding-left: 170px;
+    font-size: 36px;
+    text-transform: uppercase;
+    
+   }
+
+   header {
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+   }
+
+   .nav-menu ul li a {
+   text-decoration: none;
+   font-size: 32px;
+   position: relative;
+   }
+
+   .nav-menu ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #B8A5FF;
+    transition: 0.5s;
+   }
+
+   .nav-menu ul li a:hover:after {
+    width: 100%;
+   }
+   
+   .nav-menu {
+    padding-right: 170px;
+   }
+
+   .content {
+    margin-top: 256px;
+    display: block;
+    text-align: center;
+   }
+
+   h1 {
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: #B8A5FF;
+   }
+
+
+   .content p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 24px;
+    padding-top: 20px
+   }
+
+   .btn {
+    margin-top: 80px;
+   }
+
+   .btn button {
+    padding: 15px 30px;
+    background-color: transparent;
+    font-family: 'Jura', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+   }
+
+   .btn button::before{
+   content: '';
+   display: block;
+   height: 2px; 
+   background-color: #B8A5FF;
+   width: 200px; 
+   margin: 0 auto 10px; 
+   transition: .5s; 
+   }
+     
+     button:hover:before {
+     width: 300px; 
+     transition: ease-out .5s;
+     }
+
+     .btn button::after {
+      content: '';
+      display: block;
+      height: 2px; 
+      background: #B8A5FF; 
+      width: 200px; 
+      margin: 10px auto 0; 
+     transition: .5s; 
+  }
+     .btn button:hover:after {
+      width: 300px; 
+      transition: ease-out .5s;
+     }
+
+   
+   /*НАВЫКИ*/
+
+   .skills-content {
+      display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-left: 170px;
+   }
+
+   .skills-content p {
+    height: 294px;
+    width: 750px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 32px;
+    color: #F5F5F5;
+    flex-shrink: 0;
+   }
+
+
+h2 {
+   position: relative;
+   font-size: 200px;
+   letter-spacing: 2px;
+   color: transparent;
+   -webkit-text-stroke: 3px #F5F5F5;
+   transform: rotate(90deg);
+   right: 108px;
+   margin-top: 270px;
+}
+
+#skills img {
+   padding-left: 170px;
+   margin-top: -180px;
+   margin-bottom: 70px;
+}
+
+#skills {
+   border-bottom: 2px solid #B8A5FF;
+}
+
+
+/*ПРОЕКТЫ*/
+
+
+h3 {
+padding-top: 70px;
+font-size: 100px;
+padding-left: 200px;
+letter-spacing: 2px;
+color: transparent;
+-webkit-text-stroke: 3px #F5F5F5;
+}
+
+.project-one, .project-two  {
+   display: inline-flex;
+   justify-content: space-between;
+   margin-right: 100px;
+   height: 300px;
+   width: 1100px ;
+   align-items: center;
+
+}
+
+
+*:before, *:after {
+   box-sizing: border-box;
+}
+
+figure {
+   height: 300px;
+   width: 1100px ;
+position: relative;
+padding-right: 170px;
+margin-left: 140px;
+margin-top: 70px;
+}
+
+
+figure:before {
+width: 100%;
+content: "";
+position: absolute;
+top: 5%;
+right: 5%;
+bottom: 5%;
+right: 5%;
+border-top: 2px solid #B8A5FF;
+border-bottom: 2px solid #B8A5FF;
+transition: 0.3s;
+transform: scaleX(0);
+}
+
+figure:hover:before, figure:hover:after {
+   transform: scale(1);
+}
+
+figure:after {
+   width: 100%;
+   content: "";
+   position: absolute;
+   top: 5%;
+   right: 5%;
+   bottom: 5%;
+   right: 5%;
+   border-left: 2px solid #B8A5FF;
+   border-right: 2px solid #B8A5FF;
+   transition: 0.5s;
+   transform: scaleY(0);
+   }
+   
+    
+
+.nomber-one, .nomber-two {
+   font-family: 'Jura', sans-serif;
+   font-weight: 700;
+   font-size: 128px;
+   -webkit-text-stroke: 3px #B8A5FF;
+   color: transparent;
+   margin-left: 20px;
+}
+
+.text-one, .text-two {
+   font-family: 'Didact Gothic', sans-serif;
+   font-size: 24px;
+   text-align: center;
+   
+}
+
+.text-one span, .text-two span {
+   font-family: 'Jura', sans-serif;
+   font-weight: 600;
+   font-size: 30px;
+}
+
+.swiper {
+   width: 350px;
+   height: 200px;
+   padding-right: 0px;
+   margin-right: 0px;
+   margin-left: 0px;
+}
+
+.swiper-slide img {
+width: 100%;
+
+}
+.swiper-button-prev, .swiper-button-next {
+   color: #B8A5FF;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: #B8A5FF;
+
+}
+
+.btn2 button {
+   padding: 15px 30px;
+   border: 3px solid #B8A5FF;
+   background-color: transparent;
+   border-radius: 10px;
+   font-family: 'Jura', sans-serif;
+   font-size: 24px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-top: 70px;
+   margin-bottom: 70px;
+  }
+
+   .btn2 {
+      display: block;
+      text-align: center;
+   }
+
+   .btn2 button:hover {
+      background-color: #B8A5FF;
+     }
+
+   #projects {
+      display: block;
+      border-bottom: 2px solid #B8A5FF;
+   }
+
+
+/*КОНТАКТЫ*/
+
+   h4 {
+      padding-top: 70px;
+      font-size: 100px;
+     text-align: center;
+      }
+
+      #contact {
+         font-family: 'Didact Gothic', sans-serif;
+      }
+
+      .contact-text {
+         display: inline-flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 180px;
+         padding-left: 170px;
+      }
+      .contact-text p {
+      width: 460px;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 70px;
+      }
+
+      .social {
+         display: inline-flex;
+         justify-content: space-between;
+         gap: 300px;
+         padding-left: 170px;
+         margin-top: 40px;
+         font-size: 26px;
+         padding-bottom: 70px;
+         
+      }
+
+      .social ul li {
+         margin-bottom: 10px;
+      list-style-type: none;
+      background-position: left center;
+         background-repeat: no-repeat;   
+         width: 320px;
+         height: 52px;
+         padding-left: 70px;
+         padding-top: 18px;
+    
+        
+   }
+
+      .phone {
+         background-image: url(img/phone.png);
+      }
+
+      .telegram {
+         background-image: url(img/telegram.png);
+      }
+
+      .mail {
+         background-image: url(img/mail.png);
+      }
+
+      .git {
+         background-image: url(img/git.png);
+        
+      }
+  
+form {
+   font-family: 'Didact Gothic', sans-serif;
+   text-transform: uppercase;
+}
+
+      #name, #email, #header {
+         text-transform: uppercase;
+         font-family: 'Didact Gothic', sans-serif;
+         font-size: 20px;
+         background-color: transparent;
+         border-left: none;
+         border-right: none;
+         border-top: none;
+         border-color: #B8A5FF;
+         width: 350px ;
+      }
+      
+      #header {
+         width: 230px;
+         
+      }
+
+      label {
+         font-size: 20px;
+         opacity: 0.5;
+      }
+      textarea {
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 1px solid #B8A5FF;
+      width: 350px;
+      height: 200px;
+      font-family: 'Didact Gothic', sans-serif;
+      font-size: 18px;
+      margin-top: 20px;
+      border-radius: 5px;
+      }
+
+      #submit {
+      width: 150px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid #B8A5FF;
+      font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;
+      background-color: transparent;
+      margin-top: 20px;
+      border-radius: 5px;
+      }
+
+     
+     
+
+        /*footer*/
+        .name-f {
+         padding-left: 170px;
+         font-size: 24px;
+         text-transform: uppercase;
+        }
+
+        footer {
+         background-color: rgba(244, 244, 244, 0.1);
+         font-family: 'Jura', sans-serif;
+         font-weight: 600;
+         padding-top: 20px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-bottom: 20px;
+         border-top: 2px solid#B8A5FF;
+        }
+     
+        .nav-menu-f ul li {
+         list-style: none;
+         display: inline-block;
+         margin: 20px;
+        }
+     
+        .nav-menu-f ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        }
+        .nav-menu-f ul {
+         margin-right: 170px;
+        }
+     
+
+
+
+   @media (min-width: 320px) and (max-width:1440px) {
+
+    .main {
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    margin: auto;
+}
+   }

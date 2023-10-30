@@ -26,7 +26,7 @@ header{
     
     .nav-header-pk {
         background-color: rgba(11,11,13, 0.5);
-        height: 1296px;
+        height: 100%;
         width: 384px;
         position: absolute;
     }
@@ -62,6 +62,10 @@ header{
 
     .nav-menu a {
         color:#FFFFFF;
+     }
+
+     .nav-menu a:active {
+        color: #A276FF;
      }
 
     .nav-menu-list li {
@@ -133,6 +137,7 @@ header{
 }
 
 .content-heading {
+    display: flex;
     margin-top: 182px;
     margin-left: 592px;
     font-family: 'Oswald', sans-serif;
@@ -145,11 +150,13 @@ h1 {
     line-height: 104px;
 }
     
+
 .content-heading a {
     text-transform: uppercase;
     font-size: 120px;
     line-height: 117px;
     color: #A276FF;
+
 }
     
 .content-heading a:hover {
@@ -158,6 +165,7 @@ h1 {
     }
 
 .first {
+  
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 29px;
@@ -165,12 +173,13 @@ h1 {
     padding-top: 44px;
     margin-left: 593px;;
     width: 1083px;
-    height: 83px;
+    height: auto;
    
     }
 .btn {
     padding-top: 68px;
     margin-left: 594px;
+    display: flex;
     }
 
 button {
@@ -246,61 +255,335 @@ button:hover {
     font-size: 16px;
     margin-left: 593px;
     height: 81px;
-    padding-top: 40px;
+    margin-top: 40px;
     }
 
     .logotype-mobile {
         display: none;
     }
+    .menu {
+        display: none;}
+       
+        footer {
+            display: none;
+        }
+        
 
 /* media */
 @media (min-width: 320px) and (max-width:2173px) {
-.main {
+
+    
+    .main {
     width: 100%;
     height: 100%;
 }
-.logotype {
-    width: 100%;
-}
+
 .social-icons {
-    flex-wrap: wrap;
-    margin-left: auto;
+   flex-wrap: wrap;
+   margin-left: auto;
+ 
+
 }
 .content-heading {
    width: 100%;
    height: 100%;
- display: block;
+   flex-wrap: wrap;
+   margin-left: 500px;
+
+   
 }
     
+.first {
+    width: auto;
+    word-wrap: break-word;
+   
+    padding-right: 20px;
+    margin-left: 500px;
+
+}
+
+.btn {
+    
+    width: 100%;
+    height: 100%;
+    margin-left: 500px;
+   
+}
+
+.photo {
+    margin-left: 500px;
     
 }
 
-
-@media (min-width: 320px) and (max-width:768px) {
-    .maim {
+.photo img { 
+    margin-bottom: 30px;
+  
+  
+    }
+    
+    .news {
         width: 100%;
-        
+        height: 100%;
+        margin-left: 500px;
     }
 
+    .second {
+    width: auto;
+    word-wrap: break-word;
+    padding-right: 20px;
+    margin-left: 500px;
+    }
+
+    .menu {
+        display: none;}
+       }
+
+
+footer {
+    display: none;
+}
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 1100px) {
+    
     .nav-header-pk {
        display: none;
     }
+
+   
 
 .logotype-mobile {
     display: block;
     text-align: center;
    padding-top: 40px; 
+   font-size: 40px;
 }
-  .social-icons {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    width: 50px;
-    margin-top: -86px;
 
+   .logotype-mobile span:hover {
+    color: #F2C94C;
+    }
+
+.logotype-mobile:hover {
+    color: #FFFFFF;
+}
+
+  .social-icons {
+ display: none;
+  }
+
+  .content-heading {
+    margin: auto;
+    justify-content: center;
   }
 
 
+h1 {
+    padding-top: 44px;
+    font-size: 36px;
+    
+}
+
+.content-heading a {
+    font-size: 70px;
+    line-height: 30px;
+    
+}
+.first {
+   padding-top: 60px;
+   padding-left: 30px;
+   padding-right: 30px;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn {
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+
+    
+    
+   .news {
+    justify-content: start;
+    margin-left: 24px;
+    margin-top: 20px;
+  
+   }
+   .news h2 {
+    font-size: 32px;
+   }
+
+.second {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.burger-menu {
+    display: relative;
+ 
+  }
+
+  .burger {
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .burger span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #A276FF;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+    margin-top: -50px;
+  }
+
+
+
+  .burger span:nth-child(2),
+  .burger span:nth-child(3) {
+    margin-top: 8px;
+  }
+
+  
+
+  /* Стили для открытого меню */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #0B0B0D;
+    opacity: 0.9;
+  }
+
+  .menu.active {
+      display: block;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+   .menu a:hover {
+        color: #F2C94C;
+         background-image: url(img/Marker.png); 
+         background-size: contain;
+         background-position: left center;
+         background-repeat: no-repeat;
+         box-sizing: border-box;
+         white-space: nowrap;
+         }
+
+
+        footer {
+            display: block;
+            background-color: rgba(11,11,13, 0.5);
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            
+            
+        }
+        
+        .social-icons-mobile {
+            display: flex;
+            justify-content: center;
+           
+        }
+        .social-icons-mobile img {
+           position: relative;
+            border-radius: 50%;
+            background-color: #A276FF;
+            padding: 4px;
+            margin-top: 20px;
+        }
+
+        .social-icons-mobile img:hover {
+            background-color: #F2C94C;
+        } 
+
+        .tw img {
+            padding: 6px;
+            margin-right: 10px;
+        }
+        
+        .contact-mobile {
+            font-size: 10px;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            opacity: 0.7;
+        }
+        .contact-mobile a:first-child {
+            margin-right: 10px;
+        }
+        
+        .copyright-mobile {
+            font-size: 8px;
+            opacity: 0.4;
+            display: block;
+            text-align: center;
+            margin-top: 6px;
+            padding-bottom: 10px;
+
+        }
+    
+        .photo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: auto;
+         
+        }
+        
+        .photo img {
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 200px;
+           
+        }
+        
+       
     }
 
 
+
+
+@media (min-width: 600px) and (max-width: 1100px) {
+
+    .burger {
+        width: 60px;
+        cursor: pointer;
+      }
+
+      .burger span {        
+        height: 10px;
+        margin-top: -50px;
+      }
+        
+        .menu a {
+        font-size: 30px;
+        }
+
+.logotype-mobile {
+    font-size: 50px;
+}
+
+
+}
