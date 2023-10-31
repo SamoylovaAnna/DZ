@@ -14,6 +14,7 @@ a {
    font-family: 'Jura', sans-serif;
    font-weight: 700;
    letter-spacing: 2px;
+   text-transform: uppercase;
    }
    
    h2, h3, h4 {
@@ -86,12 +87,13 @@ a {
    }
 
    .content {
-    margin-top: 256px;
+    
     display: block;
     text-align: center;
    }
 
    h1 {
+   margin-top: 256px;
     font-size: 100px;
     letter-spacing: 2px;
     color: #B8A5FF;
@@ -109,13 +111,15 @@ a {
    }
 
    .btn button {
-    padding: 15px 30px;
+    padding: 10px 30px;
     background-color: transparent;
     font-family: 'Jura', sans-serif;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     border: none;
+    position: relative;
+    align-items: center;
    }
 
    .btn button::before{
@@ -130,7 +134,7 @@ a {
      
      button:hover:before {
      width: 300px; 
-     transition: ease-out .5s;
+     transition:  .5s;
      }
 
      .btn button::after {
@@ -144,7 +148,7 @@ a {
   }
      .btn button:hover:after {
       width: 300px; 
-      transition: ease-out .5s;
+      transition: .5s;
      }
 
    
@@ -158,7 +162,7 @@ a {
    }
 
    .skills-content p {
-    height: 294px;
+    
     width: 750px;
     font-family: 'Didact Gothic', sans-serif;
     font-size: 32px;
@@ -485,7 +489,9 @@ form {
          margin-right: 170px;
         }
      
-
+.burger-menu {
+   display: none;
+}
 
 
    @media (min-width: 320px) and (max-width:1440px) {
@@ -496,4 +502,256 @@ form {
     padding: auto;
     margin: auto;
 }
+
+.content p {
+   width: auto;
+}
+
+
+
+
+  
+
    }
+
+   @media (min-width: 320px) and (max-width:1300px) {
+      
+     
+      h2 {
+         font-size: 150px ;
+         right: 200px;
+         margin-top: 200px;
+        }
+
+        #skills img {
+         padding-top: 20px;
+         width: 600px;
+        }
+
+        .skills-content p {
+         font-size: 28px;
+         height: 200px;
+        }
+       
+        }
+
+   
+
+   @media (min-width: 320px) and (max-width:1100px) {
+
+.name {
+   font-size: 24px;
+   padding-left: 50px;
+}
+
+.nav-menu ul li a {
+   font-size: 22px;
+   
+}
+
+.nav-menu {
+   padding-right: 50px;
+}
+
+h1 {
+   font-size: 60px ;
+}
+
+.content p {
+   font-size: 22px;
+   padding-right: 20px;
+   padding-left: 20px;
+   width: auto;
+}
+
+.skills-content {
+padding-left: 50px;
+padding-right: 50px;
+}
+
+
+h2 {
+   font-size: 150px;
+  
+}
+
+.skills-content p {
+width: 700px;
+   }
+
+   #skills img {
+      padding-top: 30px;
+      width: 500px;
+      margin-top: -140px;
+      padding-left: 120px;
+     }
+
+
+  }
+
+
+  @media (min-width: 320px) and (max-width:950px) {
+    
+   .skills-content {
+     display: inline-block;
+      }
+
+      h2 {
+         position: absolute;
+         font-size: 100px;
+         transform: none;
+         margin-top: -320px;
+         right: auto;
+      }
+
+      .skills-content p {
+         padding-top: 70px;
+         width: auto;
+         text-align: center;
+            }
+
+       #skills img {
+      margin-top: 0px;
+      width: 80%;
+      
+      }
+   }
+   @media (min-width: 320px) and (max-width:550px) {
+      
+      .skills-content p {
+         font-size: 28px;
+   }
+   #skills img {
+   width: auto;
+   width: 100%;
+   }
+}
+
+
+
+   @media (min-width: 320px) and (max-width:750px) {
+    
+      #home {
+         height: 800px;
+      }
+
+      .name {
+         padding-left: 0px;
+         padding-right: 50px;
+         font-size: 20px;
+         text-align: end;
+      }
+
+      .nav-menu {
+         display: none;
+      }
+     
+
+      h1 {
+         margin-top: 200px;
+         font-size: 40px ;
+      }
+
+      .content p {
+         font-size: 20px;
+   
+      }
+
+      .btn button {
+        font-size: 18px;
+   }
+
+   h2 {
+      font-size: 40px;
+      margin-top: -280px;
+      
+   }
+
+   .skills-content p {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    
+     }
+
+   #skills img {
+padding-left: 40px;
+text-align: center;
+width: 100%;
+
+   }
+
+
+
+   .burger-menu {
+      display: block;
+      padding-left: 50px;
+      padding-top: 70px;
+    }
+  
+    .burger {
+    
+      width: 30px;
+      height: 40px;
+      cursor: pointer;
+    }
+  
+    .burger span {
+   
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: #B8A5FF;
+      transition: transform 0.3s ease;
+      margin-top: -50px;
+    }
+  
+  
+  
+    .burger span:nth-child(2),
+    .burger span:nth-child(3) {
+      margin-top: 8px;
+    }
+  
+    
+  
+    /* Стили для открытого меню */
+    .menu {
+      display: none;
+      position: absolute;
+      top: 110px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(29, 29, 29, 0.7);
+      
+    }
+  
+    .menu.active {
+        display: block;
+    }
+  
+    .menu a {
+      display: block;
+      text-decoration: none;
+      padding-bottom: 20px;
+      font-size: 18px;
+      position: relative;
+    }
+
+     .menu a:hover {
+        color: #B8A5FF
+           }
+
+           #skills img {
+            display: block;
+            max-width: 80%;
+         }
+
+
+        
+
+
+         }  
+
+         

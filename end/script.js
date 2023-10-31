@@ -1,19 +1,31 @@
+//Swiper//
+
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
+ 
     direction: 'horizontal',
     loop: true,
     effect: `fade`,
     speed: 500,
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   });
   
+  //menu//
+
+  document.addEventListener('DOMContentLoaded', function() {
+    let burgerMenu = document.querySelector('.burger-menu');
+    let burger = document.querySelector('.burger');
+    let menu = document.querySelector('.menu');
+  
+    burgerMenu.addEventListener('click', function() {
+      burger.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+  });
